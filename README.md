@@ -1,33 +1,33 @@
 **Title:** Behavioral Framework for Mesa
 
 ## **Summary**  
-Mesa currently lacks a first-class framework for modeling complex agent behaviors involving **continuous state changes, time-consuming tasks, and sophisticated decision-making**. This project aims to create a **Behavioral Framework** module that integrates **state management, task execution, and behavioral decision-making**, enabling modelers to create **realistic, adaptive agents**. The framework will support **discrete and continuous states**, **prioritized task execution**, and **reinforcement learning-based decision-making** while allowing user-defined rules and optimizations for large-scale simulations.
+Mesa currently lacks a first-class framework for modeling complex agent behaviors involving **continuous state changes, time-consuming tasks, and sophisticated decision-making**. This project aims to create a **Behavioral Framework** module in which various elements like **state management, task execution, and behavioral decision-making** can defined, enabling modelers to create **realistic and adaptive agents**. The framework will support features like **discrete and continuous states**, **task selection based on the current state of the Agent**.
 
 ## **Benefits to the Community**  
 - **Expands Mesa's Capabilities:** Provides a structured way to model advanced agent behaviors.
-- **Better Performance & Scalability:** Parallel task execution and caching for large-scale models.
 - **User-Friendly API:** High-level APIs for easy behavior customization.
-- **Supports Multiple Decision Frameworks:** Allows both **rule-based and utility-based** decision-making, with user-defined functions.
+- **Supports Multiple Decision Frameworks:** Allows both **rule-based and utility-based** decision-making, which could be modified with user-defined functions.
 - **Documentation & Tutorials:** Ensures easy adoption by the community.
 
 ## **Deliverables**  
 1. **State Management System**  
-   - Discrete states (array of integers), Continuous states (array of floats).
-   - Built-in transition patterns (e.g., exponential decay) & user-defined rules.
+   - A system where both Discrete and Continous States can be defined.
+   - Built-in transition patterns (e.g., exponential decay & user-defined rules).
    - Support for fuzzy logic-based transitions.
    
-2. **Task Execution System**  
+2. **Task System For Time-Consuming Task**  
    - Tasks run within Mesa's step function (with possible event-based optimization).
+   - Addition Task which take multiple ticks.
    - Two types of tasks:
      - **Atomic Tasks**: Must fully complete or restart if interrupted.
      - **Interruptible Tasks**: Can be paused and resumed.
-   - Asynchronous execution with **priority-based scheduling**.
-   - Parallelized task execution for improved performance.
+   - Task can be interrupted based on a priority system.
+   - Asynchronous execution.
 
 3. **Behavioral Decision-Making Framework**  
    - Supports **rule-based and utility-based** decision-making.
    - Allows **user-defined decision functions**.
-   - Integrates with **reinforcement learning** frameworks.
+   - Integrates **frameworks supporting multiple decision-making approaches**.
    
 4. **Usability Enhancements**  
    - High-level API for easy agent behavior definition.
@@ -37,8 +37,7 @@ Mesa currently lacks a first-class framework for modeling complex agent behavior
 ## **Technical Details**  
 - The module will be built as a **separate extension** for Mesa.
 - Will be integrated with Mesa's **existing scheduling system**.
-- Support for **lookup tables & function-based transitions**.
-- Caching mechanisms for optimizing repeated computations.
+- Support for both **rule-based and utility-based decision-making**.
 - Includes **test models and benchmarks** to validate performance.
 
 ## **Expected Timeline**  
@@ -51,6 +50,5 @@ Mesa currently lacks a first-class framework for modeling complex agent behavior
 
 ## **Future Work**  
 - Implement **graphical visualization** for agent behaviors.
-- Extend support for additional behavioral models (e.g., BDI framework).
 - Improve integration with external AI models.
 
