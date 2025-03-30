@@ -12,7 +12,7 @@ Mesa currently lacks a first-class framework for modeling complex agent behavior
 ## **Deliverables**  
 1. **Task System For Time-Consuming Task**  
    - Tasks run within Mesa's step function (Use of DiscreteEventScheduler for Optimization).
-   - Tasks is basically action + duration + other relevant information.
+   - Tasks are basically https://github.com/projectmesa/mesa/discussions/2526
    - Time-consuming Tasks take **multiple ticks** to complete.
    - Two types of tasks:
      - **Atomic Tasks**: Must fully complete or restart if interrupted.
@@ -41,7 +41,7 @@ Mesa currently lacks a first-class framework for modeling complex agent behavior
 | **Phase** | **Week** | **Task** |
 |-----------|------------|---------|
 | Community Bonding | Weeks 1-3 | Engage with the Mesa community, refine project scope. |
-| Phase 1 | Weeks 4-7 | Implement state management and task system. |
+| Phase 1 | Weeks 4-7 | Implement Tasks and Task system. |
 | Phase 2 | Weeks 8-11 | Develop behavioral decision-making and optimize performance. |
 | Phase 3 | Weeks 12-14 | Finalize documentation, testing, and community feedback. |
 
