@@ -5,14 +5,14 @@ Mesa currently lacks a first-class framework for modeling complex agent behavior
 
 ## **Benefits to the Community**  
 - **Expands Mesa's Capabilities:** Provides a structured way to model advanced agent behaviors.
-- **User-Friendly API:** High-level APIs for easy behavior customization.
+- **User-Friendly API:** APIs for easy behavior customization.
 - **Supports Multiple Decision Frameworks:** Allows both **rule-based and utility-based** decision-making, which could be modified with user-defined functions.
 - **Documentation & Tutorials:** Ensures easy adoption by the community.
 
 ## **Deliverables**  
 1. **Task System For Time-Consuming Task**  
    - Tasks run within Mesa's step function (Use of DiscreteEventScheduler for Optimization).
-   - Tasks is basically action + duration + other relevant information that an Agent performs.
+   - Tasks is basically action + duration + other relevant information.
    - Time-consuming Tasks take **multiple ticks** to complete.
    - Two types of tasks:
      - **Atomic Tasks**: Must fully complete or restart if interrupted.
@@ -49,3 +49,5 @@ Mesa currently lacks a first-class framework for modeling complex agent behavior
 - Implement **graphical visualization** for agent behaviors.
 - Improve integration with external AI models.
 
+## **About Me**
+I am Musheer , a second year CS student.When I was looking at the idea list I was vey intrigued by the idea of creating a "Behavioral Framework". I have already made some projects in ML(Deep Q learning, Face recognition). Also during my current semester I am learning about AI agents and various ways a agent functions, So I am excited to work with Mesa.
