@@ -5,9 +5,9 @@ Mesa currently lacks a first-class framework for modeling complex agent behavior
 
 ## **Benefits to the Community**  
 - **Expands Mesa's Capabilities:** Provides a structured way to model advanced agent behaviors.
-- **User-Friendly API:** APIs for easy behavior customization.
-- **Supports Multiple Decision Frameworks:** Allows both **rule-based and utility-based** decision-making, which could be modified with user-defined functions.
-- **Documentation & Tutorials:** Ensures easy adoption by the community.
+- **User-Friendly API:** APIs for easy customization.
+- **Supports Multiple Decision Frameworks:** Allows both **rule-based and utility-based** decision-making, which can be modified by the user.
+- **Documentation & Tutorials:** To help other better understand what is added.
 
 ## **Deliverables**  
 1. **Task System For Time-Consuming Task**  
@@ -33,7 +33,7 @@ Mesa currently lacks a first-class framework for modeling complex agent behavior
    
 ## **Technical Details**  
 - The module will be built as a **separate extension** for Mesa.
-- Will be integrated with Mesa's **existing scheduling system**.
+- Tasks will be implemented.
 - Support for both **rule-based and utility-based decision-making**.
 - Includes **test models and benchmarks** to validate performance.
 
