@@ -10,26 +10,23 @@ Mesa currently lacks a first-class framework for modeling complex agent behavior
 - **Documentation & Tutorials:** Ensures easy adoption by the community.
 
 ## **Deliverables**  
-1. **State Management System**  
-   - A system where both Discrete and Continous States can be defined.
-   - Built-in transition patterns (e.g., exponential decay & user-defined rules).
-   - Support for fuzzy logic-based transitions.
-   
-2. **Task System For Time-Consuming Task**  
-   - Tasks run within Mesa's step function (with possible event-based optimization).
-   - Addition Task which take multiple ticks.
+1. **Task System For Time-Consuming Task**  
+   - Tasks run within Mesa's step function (Use of DiscreteEventScheduler for Optimization).
+   - Tasks is basically action + duration + other relevant information that an Agent performs.
+   - Time-consuming Tasks take **multiple ticks** to complete.
    - Two types of tasks:
      - **Atomic Tasks**: Must fully complete or restart if interrupted.
      - **Interruptible Tasks**: Can be paused and resumed.
-   - Task can be interrupted based on a priority system.
-   - Asynchronous execution.
+   - Task can be interrupted based on a priority system i.e If a Task of a higher priority is introduced.
 
-3. **Behavioral Decision-Making Framework**  
+2. **Behavioral Decision-Making Framework**
+   - Framework where out of **all possible Tasks** one is selected.
+   - Selection can be based on **multiple different approaches**.
    - Supports **rule-based and utility-based** decision-making.
+   - Decision made can be **state dependent**.
    - Allows **user-defined decision functions**.
-   - Integrates **frameworks supporting multiple decision-making approaches**.
    
-4. **Usability Enhancements**  
+3. **Usability Enhancements**  
    - High-level API for easy agent behavior definition.
    - Benchmarks & performance testing.
    - Complete documentation and tutorials.
