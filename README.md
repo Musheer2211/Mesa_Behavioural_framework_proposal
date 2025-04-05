@@ -11,20 +11,21 @@ Mesa currently lacks a first-class framework for modeling complex agent behavior
 
 ## **Deliverables**  
 1. **Task System For Time-Consuming Task**  
-   - Tasks run within Mesa's step function (Use of DiscreteEventScheduler for Optimization).
-   - Tasks are basically https://github.com/projectmesa/mesa/discussions/2526
+   - Tasks are based on this discussion https://github.com/projectmesa/mesa/discussions/2526
    - Time-consuming Tasks take **multiple ticks** to complete.
+   - Task can be interrupted based on a priority system i.e If a Task of a higher priority is introduced.
    - Two types of tasks:
      - **Atomic Tasks**: Must fully complete or restart if interrupted.
      - **Interruptible Tasks**: Can be paused and resumed.
-   - Task can be interrupted based on a priority system i.e If a Task of a higher priority is introduced.
+   - A Class will be added to support these **Tasks**.
 
 2. **Behavioral Decision-Making Framework**
    - Framework where out of **all possible Tasks** one is selected.
-   - Selection can be based on **multiple different approaches**.
    - Supports **rule-based and utility-based** decision-making.
+   - Each Task will have a **A value attached** which will be calculated by **User-Defined Function**.
+   - Every Agent will have a heap **The Task at top is executed**.
+   - Only Values of Tasks with a **a Higher Priority** will have there values updated.
    - Decision made can be **state dependent**.
-   - Allows **user-defined decision functions**.
    
 3. **Usability Enhancements**  
    - High-level API for easy agent behavior definition.
