@@ -21,7 +21,6 @@ Mesa currently lacks a first-class framework for modeling complex agent behavior
 2. **Behavioral Decision-Making Framework**
    - Supports **rule-based and utility-based** decision-making.
    - Decision made can be **state dependent**.
-   - 
    
 3. **Usability Enhancements**  
    - High-level API for easy agent behavior definition.
@@ -31,10 +30,10 @@ Mesa currently lacks a first-class framework for modeling complex agent behavior
 ## **Technical Details**  
 - A Class will be added to support **Tasks** (Named something like BehaviourAgent).
 - Framework where out of **all possible Tasks** one is selected.
-- The module will be built as a **separate extension** for Mesa.
-- Each Task will have a **heuristic value attached** which will be calculated by **User-Defined Function**.
+- Each Task will have a **heuristic value attached** which will be calculated by **User-Defined Functions**.
 - Every Agent will have a heap **The Task at top is executed**.
 - Only Values of Tasks with a **a Higher Priority** will have there **values** updated.
+- The module will be built as a **separate extension** for Mesa.
 - Includes **test models and benchmarks** to validate performance.
 
 ## **Expected Timeline**  
