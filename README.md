@@ -28,11 +28,12 @@ Mesa currently lacks a first-class framework for modeling complex agent behavior
    - Complete documentation and tutorials.
    
 ## **Technical Details**  
-- A Class will be added to support **Tasks** (Named something like BehaviourAgent).
-- Framework where out of **all possible Tasks** one is selected.
-- Each Task will have a **heuristic value attached** which will be calculated by **User-Defined Functions**.
-- Every Agent will have a heap **The Task at top is executed**.
-- Only Values of Tasks with a **a Higher Priority** will have there **values** updated.
+- **Behavioral Decision-Making Framework**
+   - A Class will be added to support **Tasks** (Named something like BehaviourAgent).
+   - Framework where out of **all possible Tasks** one is selected.
+   - Each Task will have a **heuristic value attached** which will be calculated by **User-Defined Functions**.
+   - Every Agent will have a heap **The Task at top is executed**.
+   - Only Values of Tasks with a **a Higher Priority** will have there **values** updated.
 - The module will be built as a **separate extension** for Mesa.
 - Includes **test models and benchmarks** to validate performance.
 
