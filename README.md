@@ -17,14 +17,9 @@ Mesa currently lacks a first-class framework for modeling complex agent behavior
    - Two types of tasks:
      - **Atomic Tasks**: Must fully complete or restart if interrupted.
      - **Interruptible Tasks**: Can be paused and resumed.
-   - A Class will be added to support these **Tasks**.
 
 2. **Behavioral Decision-Making Framework**
-   - Framework where out of **all possible Tasks** one is selected.
    - Supports **rule-based and utility-based** decision-making.
-   - Each Task will have a **A value attached** which will be calculated by **User-Defined Function**.
-   - Every Agent will have a heap **The Task at top is executed**.
-   - Only Values of Tasks with a **a Higher Priority** will have there values updated.
    - Decision made can be **state dependent**.
    
 3. **Usability Enhancements**  
@@ -33,9 +28,12 @@ Mesa currently lacks a first-class framework for modeling complex agent behavior
    - Complete documentation and tutorials.
    
 ## **Technical Details**  
+- A Class will be added to support **Tasks**.
+- Framework where out of **all possible Tasks** one is selected.
 - The module will be built as a **separate extension** for Mesa.
-- Tasks will be implemented.
-- Support for both **rule-based and utility-based decision-making**.
+- Each Task will have a **A value attached** which will be calculated by **User-Defined Function**.
+- Every Agent will have a heap **The Task at top is executed**.
+- Only Values of Tasks with a **a Higher Priority** will have there **values** updated.
 - Includes **test models and benchmarks** to validate performance.
 
 ## **Expected Timeline**  
